@@ -3,10 +3,11 @@ import mysql.connector
 
 # Connect to MySQL Database
 conn = mysql.connector.connect(
-    host="localhost",  # Change this to your cloud DB host for deployment
-    user="root",
-    passwd="bhuvanesh",
-    database="project"
+    host="sql12.freesqldatabase.com",   # Your host
+    user="sql12773137",                 # Your username
+    passwd="Vk2lyMxvTn",              # Your password
+    database="sql12773137",             # Your database name
+    port=3306                           # Default port
 )
 c = conn.cursor()
 
