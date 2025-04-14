@@ -32,7 +32,7 @@ if choice == "Login":
             if username == "bhuvanesh" and password == "bhuvi":
                 st.session_state.logged_in = True
                 st.success("✅ Login Successful!")
-                st.experimental_rerun()
+                st.rerun()
             else:
                 st.error("🚫 Incorrect username or password!")
 
@@ -141,7 +141,7 @@ if choice == "Login":
         # Optional Logout
         if st.button("Logout"):
             st.session_state.logged_in = False
-            st.experimental_rerun()
+            st.rerun()
 
 elif choice == "Exit":
     st.warning("👋 Goodbye!")
