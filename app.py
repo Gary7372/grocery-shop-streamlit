@@ -29,7 +29,7 @@ if choice == "Login":
         password = st.text_input("Password", type="password")
 
         if st.button("Login"):
-            if username == "bhuvanesh" and password == "bhuvi":
+            if username == "Surya" and password == "surya123":
                 st.session_state.logged_in = True
                 st.success("✅ Login Successful!")
                 st.rerun()
@@ -38,7 +38,7 @@ if choice == "Login":
 
     # Show operations only after login
     if st.session_state.logged_in:
-        st.success("👋 Welcome, Bhuvanesh!")
+        st.success("👋 Welcome, Surya!")
         options = [
             "See All Customers",
             "See All Products",
